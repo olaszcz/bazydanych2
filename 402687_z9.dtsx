@@ -12,8 +12,8 @@
   DTS:ObjectName="Package"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="165"
-  DTS:VersionGUID="{FF341E9F-B03F-4D8A-8EB3-ABA3F59CB5C6}">
+  DTS:VersionBuild="266"
+  DTS:VersionGUID="{8677A702-BB50-4A99-A10F-1D598D463988}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,8 +29,7 @@
           DTS:HeaderRowDelimiter="_x000D__x000A_"
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1250"
-          DTS:ConnectionString="C:\Users\osz05\Desktop\BAZY2\cwiczenie_5\zad5.txt">
+          DTS:CodePage="1250">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -163,10 +162,87 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 7]"
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 140]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{7CD559C0-B909-4B2E-990C-298067D728AB}"
+      DTS:ObjectName="Flat File Connection Manager 140">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::Nazwa]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1250">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="first_name"
+              DTS:DTSID="{0B4945B6-2C88-4EB8-9D01-7C0EC11788F6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="last_name"
+              DTS:DTSID="{E039C403-FF89-47DB-B051-3B2CB5000943}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="email"
+              DTS:DTSID="{D1D494B8-DD62-4797-BFE9-CE5BD0ACA8CC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="city"
+              DTS:DTSID="{79E3C9C9-D142-418D-A6DA-5A590EDDEA0B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="state"
+              DTS:DTSID="{479DDFCF-98D9-46D3-AFE2-8C17B03A8911}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="file_id"
+              DTS:DTSID="{FFC238AF-22D4-4FE8-865E-970AB8D21003}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 6]"
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{55AFF37D-2CFC-4DB3-941A-D6068C93A2D0}"
-      DTS:ObjectName="Flat File Connection Manager 7">
+      DTS:ObjectName="Flat File Connection Manager 6">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::Nazwa]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
@@ -174,8 +250,7 @@
           DTS:HeaderRowDelimiter="_x000D__x000A_"
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1250"
-          DTS:ConnectionString="C:\Users\osz05\Desktop\BAZY2\cwiczenia_3\D3.txt">
+          DTS:CodePage="1250">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -262,6 +337,15 @@
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
+      DTS:DTSID="{468CB241-03DA-4CE4-80FC-7D960653B4BD}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="count">
+      <DTS:VariableValue
+        DTS:DataType="3">1</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
       DTS:DTSID="{C0C2F29C-D300-4638-81A3-0C6BEF1CE712}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
@@ -286,6 +370,53 @@
       DTS:ObjectName="JobNum">
       <DTS:VariableValue
         DTS:DataType="3">402687</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{C57544C4-BE51-4495-BD6E-4AF0D2C52E3A}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="max_l">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{4F86AFE1-093B-436F-88F1-D23E038A4015}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Name_2">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{A1DF127B-93D6-4BFB-8902-75738279ACE3}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Nazwa">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{CE35297A-0A95-4B95-94BF-6193E718680A}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="sciezka_wyp">
+      <DTS:VariableValue
+        DTS:DataType="8">C:\Users\osz05\Desktop\wypakowane</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{4969C0F6-1577-4575-8FE2-611F8A4B29ED}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="sciezka_zip">
+      <DTS:VariableValue
+        DTS:DataType="8">C:\Users\osz05\Desktop\BAZY2\cwiczenie_9\cw9_in.7z</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -785,8 +916,8 @@ FROM   DimProduct</property>
               <connections>
                 <connection
                   refId="Package\cw4\Flat File Destination.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 7]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 7]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 6]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 6]"
                   name="FlatFileConnection" />
               </connections>
               <inputs>
@@ -2459,31 +2590,85 @@ ORDER BY ProductKey</property>
                   refId="Package\cw5\Flat File Destination.Inputs[Flat File Destination Input]"
                   hasSideEffects="true"
                   name="Flat File Destination Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\cw5\Flat File Destination.Inputs[Flat File Destination Input].Columns[OrderDate]"
-                      cachedDataType="dbTimeStamp"
-                      cachedName="OrderDate"
-                      externalMetadataColumnId="Package\cw5\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[OrderDate]"
-                      lineageId="Package\cw5\Sort.Outputs[Sort Output].Columns[OrderDate]" />
-                    <inputColumn
-                      refId="Package\cw5\Flat File Destination.Inputs[Flat File Destination Input].Columns[Orders_cnt]"
-                      cachedDataType="ui8"
-                      cachedName="Orders_cnt"
-                      cachedSortKeyPosition="-1"
-                      externalMetadataColumnId="Package\cw5\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Orders_cnt]"
-                      lineageId="Package\cw5\Sort.Outputs[Sort Output].Columns[Orders_cnt]" />
-                  </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\cw5\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[OrderDate]"
-                      dataType="dbTimeStamp"
-                      name="OrderDate" />
+                      refId="Package\cw5\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FirstName]"
+                      dataType="wstr"
+                      length="255"
+                      name="FirstName" />
                     <externalMetadataColumn
-                      refId="Package\cw5\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Orders_cnt]"
-                      dataType="ui8"
-                      name="Orders_cnt" />
+                      refId="Package\cw5\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[LastName]"
+                      dataType="wstr"
+                      length="255"
+                      name="LastName" />
+                    <externalMetadataColumn
+                      refId="Package\cw5\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[EmailAddress]"
+                      dataType="wstr"
+                      length="255"
+                      name="EmailAddress" />
+                    <externalMetadataColumn
+                      refId="Package\cw5\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Address]"
+                      dataType="wstr"
+                      length="255"
+                      name="Address" />
+                    <externalMetadataColumn
+                      refId="Package\cw5\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[City]"
+                      dataType="wstr"
+                      length="255"
+                      name="City" />
+                    <externalMetadataColumn
+                      refId="Package\cw5\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Region]"
+                      dataType="wstr"
+                      length="255"
+                      name="Region" />
+                    <externalMetadataColumn
+                      refId="Package\cw5\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[PhoneNumber]"
+                      dataType="wstr"
+                      length="255"
+                      name="PhoneNumber" />
+                    <externalMetadataColumn
+                      refId="Package\cw5\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Copy of FirstName]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="Copy of FirstName" />
+                    <externalMetadataColumn
+                      refId="Package\cw5\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Copy of LastName]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="Copy of LastName" />
+                    <externalMetadataColumn
+                      refId="Package\cw5\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Copy of EmailAddress]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="Copy of EmailAddress" />
+                    <externalMetadataColumn
+                      refId="Package\cw5\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Copy of Address]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="Copy of Address" />
+                    <externalMetadataColumn
+                      refId="Package\cw5\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Copy of City]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="Copy of City" />
+                    <externalMetadataColumn
+                      refId="Package\cw5\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Copy of Region]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="Copy of Region" />
+                    <externalMetadataColumn
+                      refId="Package\cw5\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Copy of PhoneNumber]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="Copy of PhoneNumber" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -3755,6 +3940,7 @@ ORDER BY ProductKey</property>
       DTS:refId="Package\cw7_czy_plik_istnieje"
       DTS:CreationName="Microsoft.ScriptTask"
       DTS:Description="Script Task"
+      DTS:Disabled="True"
       DTS:DTSID="{462F8260-50E1-4BEB-879E-58DE1813B6FB}"
       DTS:ExecutableType="Microsoft.ScriptTask"
       DTS:LocaleID="-1"
@@ -4353,9 +4539,27 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
+      DTS:refId="Package\czy_istnieje_tabela"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{402A7B51-0B0A-411A-89CF-D40E4D8009CF}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="czy_istnieje_tabela"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{70C77FA7-332C-4EF9-9D67-CAA942B53DA1}"
+          SQLTask:SqlStatementSource="IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'dbo' AND TABLE_NAME = 'STG_CUSTOMERS')&#xA;BEGIN&#xA;    DROP TABLE dbo.STG_CUSTOMERS;&#xA;END&#xA;&#xA;CREATE TABLE dbo.STG_CUSTOMERS (&#xA;    first_name VARCHAR(50),&#xA;    last_name VARCHAR(50),&#xA;    email VARCHAR(50),&#xA;    city VARCHAR(50),&#xA;    state VARCHAR(50),&#xA;    in_file VARCHAR(50)&#xA;);&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\Delete"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
       DTS:DTSID="{284BA135-103C-4DB4-8446-AC1A35B0E44A}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -4370,9 +4574,43 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
+      DTS:refId="Package\For Loop Container"
+      DTS:AssignExpression="@count = @count + 1"
+      DTS:CreationName="STOCK:FORLOOP"
+      DTS:Description="For Loop Container"
+      DTS:DTSID="{0E962670-153E-4E9B-A1FF-C6E2B3493E05}"
+      DTS:EvalExpression="@count &lt;= 10"
+      DTS:ExecutableType="STOCK:FORLOOP"
+      DTS:InitExpression="@count=1"
+      DTS:LocaleID="-1"
+      DTS:MaxConcurrent="1"
+      DTS:ObjectName="For Loop Container">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\For Loop Container\update"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{4D4F5069-F1F9-4159-A9FB-DB3E704D389B}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="update"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{47FC6A28-8552-4EE8-920C-C7A32F5B396B}"
+              SQLTask:SqlStatementSource="UPDATE dbo.STG_CUSTOMERS&#xA;SET email = NULL&#xA;WHERE in_file % 2 = 1;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\Nie"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
+      DTS:Disabled="True"
       DTS:DTSID="{250DFE71-6915-4BFA-939D-13C9B4D1B7CA}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -6155,9 +6393,29 @@ where [refTable].[Region] = ? and [refTable].[PhoneNumber] = ? and [refTable].[L
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
+      DTS:refId="Package\Rozpakowanie pliku"
+      DTS:CreationName="Microsoft.ExecuteProcess"
+      DTS:Description="Execute Process Task"
+      DTS:DTSID="{6097FDEC-208F-4164-94BE-DC83EC108DB2}"
+      DTS:ExecutableType="Microsoft.ExecuteProcess"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Rozpakowanie pliku"
+      DTS:TaskContact="Execute Process Task;Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:PropertyExpression
+        DTS:Name="Arguments">"e " + @[User::sciezka_zip] + " -o" + @[User::sciezka_wyp]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <ExecuteProcessData
+          Executable="C:\Program Files\7-Zip\7z.exe"
+          Arguments="e C:\Users\osz05\Desktop\BAZY2\cwiczenie_9\cw9_in.7z -oC:\Users\osz05\Desktop\wypakowane" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\Rozpoczecie_procesu"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
       DTS:DTSID="{DA8438BB-F062-4EE1-89CF-2C2AD5D9860E}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -6188,7 +6446,7 @@ where [refTable].[Region] = ? and [refTable].[PhoneNumber] = ? and [refTable].[L
       DTS:LocaleID="-1"
       DTS:ObjectName="Send Mail Task"
       DTS:TaskContact="Send Mail Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SendMailTask:SendMailTaskData
@@ -6203,6 +6461,7 @@ where [refTable].[Region] = ? and [refTable].[PhoneNumber] = ? and [refTable].[L
       DTS:refId="Package\Tak"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
+      DTS:Disabled="True"
       DTS:DTSID="{39B48F75-0409-4956-92EC-DE67433B8A23}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
@@ -7072,9 +7331,729 @@ where [refTable].[Region] = ? and [refTable].[PhoneNumber] = ? and [refTable].[L
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
+      DTS:refId="Package\wypakowanie"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="C:\Users\osz05\Desktop\wypakowane"
+      DTS:DTSID="{F37A22F8-90C9-426D-9356-123C4191A21B}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="wypakowanie">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="Microsoft.ForEachFileEnumerator"
+        DTS:DTSID="{41FF6D90-1D82-418A-A51C-BDF6E60734F9}"
+        DTS:ObjectName="{41FF6D90-1D82-418A-A51C-BDF6E60734F9}">
+        <DTS:PropertyExpression
+          DTS:Name="Directory">@[User::sciezka_wyp]</DTS:PropertyExpression>
+        <DTS:ObjectData>
+          <ForEachFileEnumeratorProperties>
+            <FEFEProperty
+              Folder="C:\Users\osz05\Desktop\wypakowane" />
+            <FEFEProperty
+              FileSpec="*.csv*" />
+            <FEFEProperty
+              FileNameRetrievalType="0" />
+            <FEFEProperty
+              Recurse="0" />
+          </ForEachFileEnumeratorProperties>
+        </DTS:ObjectData>
+      </DTS:ForEachEnumerator>
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\wypakowanie\Do bazy"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{955DF8EB-0400-4C8B-9F9D-BB3B6C610472}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Do bazy"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\wypakowanie\Do bazy\Data Conversion"
+                  componentClassID="Microsoft.DataConvert"
+                  contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Data Conversion"
+                  name="Data Conversion"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\wypakowanie\Do bazy\Data Conversion.Inputs[Data Conversion Input]"
+                      name="Data Conversion Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\wypakowanie\Do bazy\Data Conversion.Inputs[Data Conversion Input].Columns[first_name]"
+                          cachedCodepage="1250"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="first_name"
+                          lineageId="Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Output].Columns[first_name]" />
+                        <inputColumn
+                          refId="Package\wypakowanie\Do bazy\Data Conversion.Inputs[Data Conversion Input].Columns[last_name]"
+                          cachedCodepage="1250"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="last_name"
+                          lineageId="Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Output].Columns[last_name]" />
+                        <inputColumn
+                          refId="Package\wypakowanie\Do bazy\Data Conversion.Inputs[Data Conversion Input].Columns[email]"
+                          cachedCodepage="1250"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="email"
+                          lineageId="Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Output].Columns[email]" />
+                        <inputColumn
+                          refId="Package\wypakowanie\Do bazy\Data Conversion.Inputs[Data Conversion Input].Columns[city]"
+                          cachedCodepage="1250"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="city"
+                          lineageId="Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Output].Columns[city]" />
+                        <inputColumn
+                          refId="Package\wypakowanie\Do bazy\Data Conversion.Inputs[Data Conversion Input].Columns[state]"
+                          cachedCodepage="1250"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="state"
+                          lineageId="Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Output].Columns[state]" />
+                        <inputColumn
+                          refId="Package\wypakowanie\Do bazy\Data Conversion.Inputs[Data Conversion Input].Columns[file_id]"
+                          cachedCodepage="1250"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="file_id"
+                          lineageId="Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Output].Columns[file_id]" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\wypakowanie\Do bazy\Data Conversion.Outputs[Data Conversion Output]"
+                      exclusionGroup="1"
+                      name="Data Conversion Output"
+                      synchronousInputId="Package\wypakowanie\Do bazy\Data Conversion.Inputs[Data Conversion Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\wypakowanie\Do bazy\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of first_name]"
+                          codePage="1250"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="50"
+                          lineageId="Package\wypakowanie\Do bazy\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of first_name]"
+                          name="Copy of first_name"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Output].Columns[first_name]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\wypakowanie\Do bazy\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of last_name]"
+                          codePage="1250"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="50"
+                          lineageId="Package\wypakowanie\Do bazy\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of last_name]"
+                          name="Copy of last_name"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Output].Columns[last_name]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\wypakowanie\Do bazy\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of email]"
+                          codePage="1250"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="50"
+                          lineageId="Package\wypakowanie\Do bazy\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of email]"
+                          name="Copy of email"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Output].Columns[email]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\wypakowanie\Do bazy\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of city]"
+                          codePage="1250"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="50"
+                          lineageId="Package\wypakowanie\Do bazy\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of city]"
+                          name="Copy of city"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Output].Columns[city]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\wypakowanie\Do bazy\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of state]"
+                          codePage="1250"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="50"
+                          lineageId="Package\wypakowanie\Do bazy\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of state]"
+                          name="Copy of state"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Output].Columns[state]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\wypakowanie\Do bazy\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of file_id]"
+                          codePage="1250"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="50"
+                          lineageId="Package\wypakowanie\Do bazy\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of file_id]"
+                          name="Copy of file_id"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Output].Columns[file_id]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\wypakowanie\Do bazy\Data Conversion.Outputs[Data Conversion Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Data Conversion Error Output"
+                      synchronousInputId="Package\wypakowanie\Do bazy\Data Conversion.Inputs[Data Conversion Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\wypakowanie\Do bazy\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\wypakowanie\Do bazy\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\wypakowanie\Do bazy\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\wypakowanie\Do bazy\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\wypakowanie\Do bazy\Flat File Source"
+                  componentClassID="Microsoft.FlatFileSource"
+                  contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Source"
+                  localeId="1045"
+                  name="Flat File Source"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether zero-length columns are treated as null."
+                      name="RetainNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                      name="FileNameColumnName"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\wypakowanie\Do bazy\Flat File Source.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 140]"
+                      connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 140]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Output]"
+                      name="Flat File Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Output].Columns[first_name]"
+                          codePage="1250"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[first_name]"
+                          length="50"
+                          lineageId="Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Output].Columns[first_name]"
+                          name="first_name"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Output].Columns[last_name]"
+                          codePage="1250"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[last_name]"
+                          length="50"
+                          lineageId="Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Output].Columns[last_name]"
+                          name="last_name"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Output].Columns[email]"
+                          codePage="1250"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[email]"
+                          length="50"
+                          lineageId="Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Output].Columns[email]"
+                          name="email"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Output].Columns[city]"
+                          codePage="1250"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[city]"
+                          length="50"
+                          lineageId="Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Output].Columns[city]"
+                          name="city"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Output].Columns[state]"
+                          codePage="1250"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[state]"
+                          length="50"
+                          lineageId="Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Output].Columns[state]"
+                          name="state"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Output].Columns[file_id]"
+                          codePage="1250"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[file_id]"
+                          length="50"
+                          lineageId="Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Output].Columns[file_id]"
+                          name="file_id"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[first_name]"
+                          codePage="1250"
+                          dataType="str"
+                          length="50"
+                          name="first_name" />
+                        <externalMetadataColumn
+                          refId="Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[last_name]"
+                          codePage="1250"
+                          dataType="str"
+                          length="50"
+                          name="last_name" />
+                        <externalMetadataColumn
+                          refId="Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[email]"
+                          codePage="1250"
+                          dataType="str"
+                          length="50"
+                          name="email" />
+                        <externalMetadataColumn
+                          refId="Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[city]"
+                          codePage="1250"
+                          dataType="str"
+                          length="50"
+                          name="city" />
+                        <externalMetadataColumn
+                          refId="Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[state]"
+                          codePage="1250"
+                          dataType="str"
+                          length="50"
+                          name="state" />
+                        <externalMetadataColumn
+                          refId="Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[file_id]"
+                          codePage="1250"
+                          dataType="str"
+                          length="50"
+                          name="file_id" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Error Output]"
+                      isErrorOut="true"
+                      name="Flat File Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          codePage="1250"
+                          dataType="text"
+                          description="Flat File Source Error Output Column"
+                          lineageId="Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          name="Flat File Source Error Output Column" />
+                        <outputColumn
+                          refId="Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\wypakowanie\Do bazy\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[STG_CUSTOMERS]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1250</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">true</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\wypakowanie\Do bazy\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[OLA\SQLDEV.AdventureWorksDW2019]"
+                      connectionManagerRefId="Package.ConnectionManagers[OLA\SQLDEV.AdventureWorksDW2019]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\wypakowanie\Do bazy\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\wypakowanie\Do bazy\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of first_name]"
+                          cachedCodepage="1250"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Copy of first_name"
+                          externalMetadataColumnId="Package\wypakowanie\Do bazy\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[first_name]"
+                          lineageId="Package\wypakowanie\Do bazy\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of first_name]" />
+                        <inputColumn
+                          refId="Package\wypakowanie\Do bazy\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of last_name]"
+                          cachedCodepage="1250"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Copy of last_name"
+                          externalMetadataColumnId="Package\wypakowanie\Do bazy\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[last_name]"
+                          lineageId="Package\wypakowanie\Do bazy\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of last_name]" />
+                        <inputColumn
+                          refId="Package\wypakowanie\Do bazy\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of email]"
+                          cachedCodepage="1250"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Copy of email"
+                          externalMetadataColumnId="Package\wypakowanie\Do bazy\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[email]"
+                          lineageId="Package\wypakowanie\Do bazy\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of email]" />
+                        <inputColumn
+                          refId="Package\wypakowanie\Do bazy\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of city]"
+                          cachedCodepage="1250"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Copy of city"
+                          externalMetadataColumnId="Package\wypakowanie\Do bazy\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[city]"
+                          lineageId="Package\wypakowanie\Do bazy\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of city]" />
+                        <inputColumn
+                          refId="Package\wypakowanie\Do bazy\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of state]"
+                          cachedCodepage="1250"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Copy of state"
+                          externalMetadataColumnId="Package\wypakowanie\Do bazy\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[state]"
+                          lineageId="Package\wypakowanie\Do bazy\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of state]" />
+                        <inputColumn
+                          refId="Package\wypakowanie\Do bazy\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of file_id]"
+                          cachedCodepage="1250"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Copy of file_id"
+                          externalMetadataColumnId="Package\wypakowanie\Do bazy\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[in_file]"
+                          lineageId="Package\wypakowanie\Do bazy\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of file_id]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\wypakowanie\Do bazy\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[first_name]"
+                          codePage="1250"
+                          dataType="str"
+                          length="50"
+                          name="first_name" />
+                        <externalMetadataColumn
+                          refId="Package\wypakowanie\Do bazy\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[last_name]"
+                          codePage="1250"
+                          dataType="str"
+                          length="50"
+                          name="last_name" />
+                        <externalMetadataColumn
+                          refId="Package\wypakowanie\Do bazy\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[email]"
+                          codePage="1250"
+                          dataType="str"
+                          length="50"
+                          name="email" />
+                        <externalMetadataColumn
+                          refId="Package\wypakowanie\Do bazy\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[city]"
+                          codePage="1250"
+                          dataType="str"
+                          length="50"
+                          name="city" />
+                        <externalMetadataColumn
+                          refId="Package\wypakowanie\Do bazy\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[state]"
+                          codePage="1250"
+                          dataType="str"
+                          length="50"
+                          name="state" />
+                        <externalMetadataColumn
+                          refId="Package\wypakowanie\Do bazy\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[in_file]"
+                          codePage="1250"
+                          dataType="str"
+                          length="50"
+                          name="in_file" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\wypakowanie\Do bazy\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\wypakowanie\Do bazy\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\wypakowanie\Do bazy\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\wypakowanie\Do bazy\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\wypakowanie\Do bazy\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\wypakowanie\Do bazy\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\wypakowanie\Do bazy.Paths[Data Conversion Output]"
+                  endId="Package\wypakowanie\Do bazy\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="Data Conversion Output"
+                  startId="Package\wypakowanie\Do bazy\Data Conversion.Outputs[Data Conversion Output]" />
+                <path
+                  refId="Package\wypakowanie\Do bazy.Paths[Flat File Source Output]"
+                  endId="Package\wypakowanie\Do bazy\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Flat File Source Output"
+                  startId="Package\wypakowanie\Do bazy\Flat File Source.Outputs[Flat File Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{015656A5-36EB-4E9C-98C9-BE6EDC4AC487}"
+          DTS:ObjectName="{015656A5-36EB-4E9C-98C9-BE6EDC4AC487}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::Nazwa" />
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{5BB64DFB-7387-456B-BE22-212B38A84965}"
+          DTS:ObjectName="{5BB64DFB-7387-456B-BE22-212B38A84965}"
+          DTS:ValueIndex="1"
+          DTS:VariableName="User::sciezka_wyp" />
+      </DTS:ForEachVariableMappings>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\Zakonczenie_procesu 1"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
       DTS:DTSID="{fe365f6a-3e57-4ae8-ab4c-341067a7aebe}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -7099,12 +8078,13 @@ where [refTable].[Region] = ? and [refTable].[PhoneNumber] = ? and [refTable].[L
       DTS:refId="Package\Zakonczenie_procesu_2"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
       DTS:DTSID="{B6AF17B0-637B-48C6-AB55-7A3CFB794D19}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Zakonczenie_procesu_2"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="3">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -7173,6 +8153,30 @@ where [refTable].[Region] = ? and [refTable].[PhoneNumber] = ? and [refTable].[L
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 5"
       DTS:To="Package\Zakonczenie_procesu 1" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 6]"
+      DTS:CreationName=""
+      DTS:DTSID="{0A299065-7EA2-4CE7-AE22-E5D55173B244}"
+      DTS:From="Package\Rozpakowanie pliku"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 6"
+      DTS:To="Package\czy_istnieje_tabela" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 7]"
+      DTS:CreationName=""
+      DTS:DTSID="{E12CA48C-DB2C-40B9-8031-92DF3A2A74FC}"
+      DTS:From="Package\czy_istnieje_tabela"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 7"
+      DTS:To="Package\wypakowanie" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 8]"
+      DTS:CreationName=""
+      DTS:DTSID="{F41261EB-C36E-443D-A349-70CBAA7FC8AC}"
+      DTS:From="Package\wypakowanie"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 8"
+      DTS:To="Package\For Loop Container" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -7189,45 +8193,53 @@ where [refTable].[Region] = ? and [refTable].[PhoneNumber] = ? and [refTable].[L
         <NodeLayout
           Size="96.8,41.6"
           Id="Package\cw4"
-          TopLeft="164.722213222198,10.6888888145597" />
+          TopLeft="164.722213222198,28.0222220273592" />
         <NodeLayout
           Size="96.8,41.6"
           Id="Package\cw5"
-          TopLeft="306.055539133924,11.8555555113598" />
+          TopLeft="306.055539133924,29.1888887241593" />
         <NodeLayout
           Size="96.8,41.6"
           Id="Package\cw6"
-          TopLeft="449.722197650483,11.5555554751996" />
-        <NodeLayout
-          Size="180.8,41.6"
-          Id="Package\Rozpoczecie_procesu"
-          TopLeft="253.866660702063,150.41873125157" />
+          TopLeft="449.722197650483,28.8888886879991" />
         <NodeLayout
           Size="94.4,41.6"
           Id="Package\Nie"
-          TopLeft="231.266652916206,166.844442065911" />
+          TopLeft="207.655543095149,88.8444426083136" />
         <NodeLayout
           Size="96,41.6"
           Id="Package\Tak"
-          TopLeft="59.1888797978021,208.37221955491" />
+          TopLeft="99.4666553748993,157.816664350911" />
         <NodeLayout
           Size="144.8,41.6"
           Id="Package\Delete"
-          TopLeft="33.277776260067,119.688884457262" />
+          TopLeft="20.7777769430368,89.3555513348626" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="106.433328028935,161.288884457262">
+          TopLeft="93.1777769430368,130.955551334863">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,47.0833350976477"
+              EndConnector="54.2888784318625,26.8611130160483"
               Start="0,0"
-              End="0,39.5833350976477">
+              End="54.2888784318625,19.3611130160483">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,39.5833350976477" />
+                    End="0,9.43055650802417" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,9.43055650802417"
+                    Point2="0,13.4305565080242"
+                    Point3="4,13.4305565080242" />
+                  <mssgle:LineSegment
+                    End="50.2888784318625,13.4305565080242" />
+                  <mssgle:CubicBezierSegment
+                    Point1="50.2888784318625,13.4305565080242"
+                    Point2="54.2888784318625,13.4305565080242"
+                    Point3="54.2888784318625,17.4305565080242" />
+                  <mssgle:LineSegment
+                    End="54.2888784318625,19.3611130160483" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7239,88 +8251,88 @@ where [refTable].[Region] = ? and [refTable].[PhoneNumber] = ? and [refTable].[L
         <NodeLayout
           Size="177.6,41.6"
           Id="Package\cw7_czy_plik_istnieje"
-          TopLeft="79.4777612347302,27.0555556560004" />
+          TopLeft="68.3666507307035,21.2777779184006" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="196.544427901397,68.6555556560004">
+          TopLeft="185.43331739737,62.8777779184006">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="81.9222250148092,98.1888864099106"
+              EndConnector="69.4222256977787,25.966664689913"
               Start="0,0"
-              End="81.9222250148092,90.6888864099106">
+              End="69.4222256977787,18.466664689913">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,35.8015664554459" />
+                    End="0,6.52577300823257" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,35.8015664554459"
-                    Point2="0,39.8015664554459"
-                    Point3="4,39.8015664554459" />
+                    Point1="0,6.52577300823257"
+                    Point2="0,10.5257730082326"
+                    Point3="4,10.5257730082326" />
                   <mssgle:LineSegment
-                    End="77.9222250148092,39.8015664554459" />
+                    End="65.4222256977787,10.5257730082326" />
                   <mssgle:CubicBezierSegment
-                    Point1="77.9222250148092,39.8015664554459"
-                    Point2="81.9222250148092,39.8015664554459"
-                    Point3="81.9222250148092,43.8015664554459" />
+                    Point1="65.4222256977787,10.5257730082326"
+                    Point2="69.4222256977787,10.5257730082326"
+                    Point3="69.4222256977787,14.5257730082326" />
                   <mssgle:LineSegment
-                    End="81.9222250148092,90.6888864099106" />
+                    End="69.4222256977787,18.466664689913" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="32.9611125074046,44.8015664554459,16,16"
+              BoundingBox="26.7111128488893,15.5257730082326,16,16"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="140.011094568064,68.6555556560004">
+          TopLeft="128.899984064037,62.8777779184006">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-34.3333183079966,51.0333288012614"
+              EndConnector="-35.7222071210001,26.477773416462"
               Start="0,0"
-              End="-34.3333183079966,43.5333288012614">
+              End="-35.7222071210001,18.977773416462">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,16.6867243533685" />
+                    End="0,6.73295458131584" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,16.6867243533685"
-                    Point2="0,20.6867243533685"
-                    Point3="-4,20.6867243533685" />
+                    Point1="0,6.73295458131584"
+                    Point2="0,10.7329545813158"
+                    Point3="-4,10.7329545813158" />
                   <mssgle:LineSegment
-                    End="-30.3333183079966,20.6867243533685" />
+                    End="-31.7222071210001,10.7329545813158" />
                   <mssgle:CubicBezierSegment
-                    Point1="-30.3333183079966,20.6867243533685"
-                    Point2="-34.3333183079966,20.6867243533685"
-                    Point3="-34.3333183079966,24.6867243533685" />
+                    Point1="-31.7222071210001,10.7329545813158"
+                    Point2="-35.7222071210001,10.7329545813158"
+                    Point3="-35.7222071210001,14.7329545813158" />
                   <mssgle:LineSegment
-                    End="-34.3333183079966,43.5333288012614" />
+                    End="-35.7222071210001,18.977773416462" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-25.1666591539983,25.6867243533685,16,16"
+              BoundingBox="-25.8611035605,15.7329545813158,16,16"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <GroupLayout
           Text="CW7"
-          ParentId="Package"
+          ParentId="a6198bd2-58a7-4555-8ebd-585956acadca"
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="331.2,272.8"
-          Size="331.2,316"
+          PanelSize="307.2,252.8"
+          Size="307.2,296"
           Id="56651f7b-f64b-4c43-aae8-904d31f7ede8"
-          TopLeft="184.355613987425,242.666671147511">
+          TopLeft="30.896824009204,130.37778211599">
           <GroupLayout.ChildrenIds>
             <s:String>Package\Nie</s:String>
             <s:String>Package\Tak</s:String>
@@ -7332,107 +8344,258 @@ where [refTable].[Region] = ? and [refTable].[PhoneNumber] = ? and [refTable].[L
           </GroupLayout.ChildrenIds>
         </GroupLayout>
         <NodeLayout
-          Size="192,41.6"
-          Id="Package\Zakonczenie_procesu_2"
-          TopLeft="349.722203114243,614.311107479025" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="348.133330351032,192.01873125157">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,120.78126874843"
-              Start="0,0"
-              End="0,113.28126874843">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,113.28126874843" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="462.4,494.4">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-16.6777968857569,119.911107479025"
-              Start="0,0"
-              End="-16.6777968857569,112.411107479025">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,55.9555537395124" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,55.9555537395124"
-                    Point2="0,59.9555537395124"
-                    Point3="-4,59.9555537395124" />
-                  <mssgle:LineSegment
-                    End="-12.6777968857569,59.9555537395124" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-12.6777968857569,59.9555537395124"
-                    Point2="-16.6777968857569,59.9555537395124"
-                    Point3="-16.6777968857569,63.9555537395124" />
-                  <mssgle:LineSegment
-                    End="-16.6777968857569,112.411107479025" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="188.8,41.6"
-          Id="Package\Zakonczenie_procesu 1"
-          TopLeft="150.555547329563,613.022218754866" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 5]"
-          TopLeft="291.2,535.2">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-46.2444526704372,77.8222187548661"
-              Start="0,0"
-              End="-46.2444526704372,70.3222187548661">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,34.911109377433" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,34.911109377433"
-                    Point2="0,38.911109377433"
-                    Point3="-4,38.911109377433" />
-                  <mssgle:LineSegment
-                    End="-42.2444526704372,38.911109377433" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-42.2444526704372,38.911109377433"
-                    Point2="-46.2444526704372,38.911109377433"
-                    Point3="-46.2444526704372,42.911109377433" />
-                  <mssgle:LineSegment
-                    End="-46.2444526704372,70.3222187548661" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
           Size="149.6,41.6"
           Id="Package\Send Mail Task"
-          TopLeft="581.88885739639,226.499998463194" />
+          TopLeft="202.166655921274,10.6999999638398" />
+        <NodeLayout
+          Size="173.6,41.6"
+          Id="Package\Zakonczenie_procesu 1"
+          TopLeft="3.34442057085391,449.599996745587" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 5]"
+          TopLeft="178.4,372.8">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-88.2555794291461,76.7999967455864"
+              Start="0,0"
+              End="-88.2555794291461,69.2999967455864">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.3999983727932" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,34.3999983727932"
+                    Point2="0,38.3999983727932"
+                    Point3="-4,38.3999983727932" />
+                  <mssgle:LineSegment
+                    End="-84.2555794291461,38.3999983727932" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-84.2555794291461,38.3999983727932"
+                    Point2="-88.2555794291461,38.3999983727932"
+                    Point3="-88.2555794291461,42.3999983727932" />
+                  <mssgle:LineSegment
+                    End="-88.2555794291461,69.2999967455864" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="175.2,41.6"
+          Id="Package\Zakonczenie_procesu_2"
+          TopLeft="189.733299275903,447.133329940306" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="286.4,304">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-9.06670072409742,143.133329940306"
+              Start="0,0"
+              End="-9.06670072409742,135.633329940306">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,67.5666649701531" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,67.5666649701531"
+                    Point2="0,71.5666649701531"
+                    Point3="-4,71.5666649701531" />
+                  <mssgle:LineSegment
+                    End="-5.06670072409742,71.5666649701531" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-5.06670072409742,71.5666649701531"
+                    Point2="-9.06670072409742,71.5666649701531"
+                    Point3="-9.06670072409742,75.5666649701531" />
+                  <mssgle:LineSegment
+                    End="-9.06670072409742,135.633329940306" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="180.8,41.6"
+          Id="Package\Rozpoczecie_procesu"
+          TopLeft="60.8222031142427,63.5520642654886" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="151.222203114243,105.152064265489">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="36.7777968857573,90.0479357345114"
+              Start="0,0"
+              End="36.7777968857573,82.5479357345114">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41.0239678672557" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,41.0239678672557"
+                    Point2="0,45.0239678672557"
+                    Point3="4,45.0239678672557" />
+                  <mssgle:LineSegment
+                    End="32.7777968857573,45.0239678672557" />
+                  <mssgle:CubicBezierSegment
+                    Point1="32.7777968857573,45.0239678672557"
+                    Point2="36.7777968857573,45.0239678672557"
+                    Point3="36.7777968857573,49.0239678672557" />
+                  <mssgle:LineSegment
+                    End="36.7777968857573,82.5479357345114" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <GroupLayout
+          Text="cw_8"
+          ParentId="Package"
+          HeaderHeight="46.088888868799941"
+          IsExpanded="False"
+          PanelSize="374.4,532"
+          Size="374.4,46.4"
+          Id="a6198bd2-58a7-4555-8ebd-585956acadca"
+          TopLeft="36.3095218256593,90.2793638048635">
+          <GroupLayout.ChildrenIds>
+            <s:String>56651f7b-f64b-4c43-aae8-904d31f7ede8</s:String>
+            <s:String>Package\Send Mail Task</s:String>
+            <s:String>Package\Zakonczenie_procesu 1</s:String>
+            <s:String>Package.PrecedenceConstraints[Constraint 5]</s:String>
+            <s:String>Package\Zakonczenie_procesu_2</s:String>
+            <s:String>Package.PrecedenceConstraints[Constraint 4]</s:String>
+            <s:String>Package\Rozpoczecie_procesu</s:String>
+            <s:String>Package.PrecedenceConstraints[Constraint 3]</s:String>
+          </GroupLayout.ChildrenIds>
+        </GroupLayout>
+        <NodeLayout
+          Size="181.6,41.6"
+          Id="Package\Rozpakowanie pliku"
+          TopLeft="66.6111077721473,12.7222221719998" />
+        <NodeLayout
+          Size="176,41.6"
+          Id="Package\czy_istnieje_tabela"
+          TopLeft="75.7955840095668,83.7269824710786" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 6]"
+          TopLeft="160.603345890857,54.3222221719998">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,29.4047602990788"
+              Start="0,0"
+              End="0,21.9047602990788">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.9047602990788" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="116.8,41.6"
+          Id="Package\wypakowanie\Do bazy"
+          TopLeft="43.5071073914937,11.5238079138221" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="200.8,67.2"
+          Size="200.8,110.4"
+          Id="Package\wypakowanie"
+          TopLeft="66.4701876936896,183.269048676947" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 7]"
+          TopLeft="165.332885851628,125.326982471079">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,57.9420662058681"
+              Start="0,0"
+              End="0,50.4420662058681">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,50.4420662058681" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="110.4,41.6"
+          Id="Package\For Loop Container\update"
+          TopLeft="59.0110756725642,14.777774031184" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="213.6,72"
+          Size="213.6,115.2"
+          Id="Package\For Loop Container"
+          TopLeft="59.933358830875,336.461107718586" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 8]"
+          TopLeft="166.801773262282,293.669048676947">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,42.7920590416391"
+              Start="0,0"
+              End="0,35.2920590416391">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.2920590416391" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <GroupLayout
+          Text="cw9"
+          ParentId="Package"
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="304,474.4"
+          Size="304,517.6"
+          Id="34078a5f-1298-4f41-b35e-a13976595200"
+          TopLeft="436.815032069958,96.4587288030116">
+          <GroupLayout.ChildrenIds>
+            <s:String>Package\Rozpakowanie pliku</s:String>
+            <s:String>Package\czy_istnieje_tabela</s:String>
+            <s:String>Package.PrecedenceConstraints[Constraint 6]</s:String>
+            <s:String>Package\wypakowanie</s:String>
+            <s:String>Package.PrecedenceConstraints[Constraint 7]</s:String>
+            <s:String>Package\For Loop Container</s:String>
+            <s:String>Package.PrecedenceConstraints[Constraint 8]</s:String>
+          </GroupLayout.ChildrenIds>
+        </GroupLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -7806,6 +8969,10 @@ where [refTable].[Region] = ? and [refTable].[PhoneNumber] = ? and [refTable].[L
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="97.6,41.6"
+          Id="Package\cw5\Sort"
+          TopLeft="311.666649637951,241.799998318553" />
+        <NodeLayout
           Size="170.4,41.6"
           Id="Package\cw5\Flat File Destination"
           TopLeft="278.333318125871,320.66666443679" />
@@ -7818,61 +8985,9 @@ where [refTable].[Region] = ? and [refTable].[PhoneNumber] = ? and [refTable].[L
           Id="Package\cw5\Aggregate"
           TopLeft="293.833317579495,171.899998842875" />
         <NodeLayout
-          Size="97.6,41.6"
-          Id="Package\cw5\Sort"
-          TopLeft="311.666649637951,241.799998318553" />
-        <NodeLayout
           Size="160,41.6"
           Id="Package\cw5\FactInternetSales"
           TopLeft="280.833317989277,17.3333332127995" />
-        <EdgeLayout
-          Id="Package\cw5.Paths[Data Conversion Output]"
-          TopLeft="358.366650525812,137.799999331037">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,34.099999511838"
-              Start="0,0"
-              End="0,26.599999511838">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26.599999511838" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\cw5.Paths[Aggregate Output 1]"
-          TopLeft="358.749983608723,213.499998842875">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,28.2999994756777"
-              Start="0,0"
-              End="0,20.7999994756777">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.7999994756777" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\cw5.Paths[Sort Output]"
           TopLeft="361.999983881911,283.399998318553">
@@ -7911,6 +9026,54 @@ where [refTable].[Region] = ? and [refTable].[PhoneNumber] = ? and [refTable].[L
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,29.7666661182377" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\cw5.Paths[Data Conversion Output]"
+          TopLeft="358.366650525812,137.799999331037">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,34.099999511838"
+              Start="0,0"
+              End="0,26.599999511838">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.599999511838" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\cw5.Paths[Aggregate Output 1]"
+          TopLeft="358.749983608723,213.499998842875">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,28.2999994756777"
+              Start="0,0"
+              End="0,20.7999994756777">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.7999994756777" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8675,6 +9838,87 @@ where [refTable].[Region] = ? and [refTable].[PhoneNumber] = ? and [refTable].[L
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\Tak\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\wypakowanie\Do bazy">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\wypakowanie\Do bazy\OLE DB Destination"
+          TopLeft="38.3333312388925,159.466665557755" />
+        <NodeLayout
+          Size="151.2,41.6"
+          Id="Package\wypakowanie\Do bazy\Flat File Source"
+          TopLeft="45.333343452876,15.7999997232358" />
+        <NodeLayout
+          Size="156,41.6"
+          Id="Package\wypakowanie\Do bazy\Data Conversion"
+          TopLeft="47.4999974047146,90.9999993671974" />
+        <EdgeLayout
+          Id="Package\wypakowanie\Do bazy.Paths[Flat File Source Output]"
+          TopLeft="123.216670428795,57.3999997232358">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,33.5999996439615"
+              Start="0,0"
+              End="0,26.0999996439615">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.0999996439615" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\wypakowanie\Do bazy.Paths[Data Conversion Output]"
+          TopLeft="124.716664321804,132.599999367197">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,26.866666190558"
+              Start="0,0"
+              End="0,19.366666190558">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.366666190558" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\wypakowanie\Do bazy\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
